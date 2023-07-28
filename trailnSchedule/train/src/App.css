@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+ 
+#trainImage{
+  
+  
+  width:20vw;
+  height: 20vh;
+}
