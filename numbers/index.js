@@ -9,14 +9,14 @@ app.get('/numbers', (req, res) => {
   const { start, end } = req.query; // creating a prams
 
   if (!start || !end) { // condition to check start and end are valid or not
-    return res.status(400).json({ error: 'Both start and end parameters are required.' });
+    return res.status(400).json({ error: 'Give all parameters' });
   }
 
   const startNumber = parseInt(start);
   const endNumber = parseInt(end);
 
   if (isNaN(startNumber) || isNaN(endNumber)) { // checking start and end are number
-    return res.status(400).json({ error: 'Invalid start or end parameter. Please provide valid numbers.' });
+    return res.status(400).json({ error: 'Enter only numbers' });
   }
 
   
